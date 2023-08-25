@@ -1,97 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed&display=swap');
 
 body {
     margin: 0px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-#root {
-    background: linear-gradient(45deg, #b8e994, #87ceeb);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#login {
     display: flex;
     flex-direction: column;
-    width: 30%;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid red; */
-
+    height: 100vh;
+    width: 100vw;
+    background: url("https://s3-alpha-sig.figma.com/img/4cd4/2cb9/4d53e98a49661c11dadb75d6e3ff60a9?Expires=1693785600&Signature=C00pi8hdsM0Fau-9cpQnBIUlzAwNuL5WFzknnBHNx6UxfDhLXg-w9qhy~lPLZPDn1t6jU20ELD6BQHxoxVT5t6H0WFyBzP00Bp1Fv0QAU1Wzs1sM1T2UksVoNj6d1ZSgoD41HeqqtZe2fwv2fT3GKEU33hGEpr0HkYJCDmEwZuO-vGCg5ZtmkezE6R67HjhslYcVl3jfjx72QBgPuHBfd51Ty2nkGT1mg~B4y5mENjad7if-bpp0vUtrZIDgzAh1lpDvMb2~M67Td6oToUP02gpFEn0dhlhOMTyMpKBTqZ4XupjU8PNYZjGRnrbrnNjCjl9~x7OHqvAbHV38gtISfA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-    text-align: center;
+.image-container {
+    max-width: 100%;
+    /* Set the maximum width to prevent overflow */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
-#icon{
-    height:40px;
-    width:auto;
+
+#login-img {
+    height: 100px;
+    width: auto;
+    border-radius: 100px;
 }
+
 
 .input-container {
-    position: relative;
-    margin: 10px 0;
-    width:70%;
-    font-size: 1.5rem;
-    position: relative;
-    right:30px;
+    border: 2px solid black;
+    display: flex;
+    margin: 10px;
+    font-size: 2rem;
+    width: 20%;
+    box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .input-field {
-    width: 100%;
-    padding: 20px 0px 20px 50px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
-.input-field:focus {
+    border: none;
     outline: none;
-    border-color: #80bdff;
-    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
-}
-
-.input-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #ccc;
-}
-
-#ForgotPassword{
-    justify-self: flex-end;
-    align-self: flex-end;
-}
-
-#ForgotPassword a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
+    background: none;
 }
 
 button {
-    background-color: #d5dec9;
-    margin: 20px;
-    width: 150px;
-    height: 40px;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #a3cd79;
     font-weight: bolder;
-    cursor: pointer;
-    border:none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px;
 
 }
 
-@media (max-width:800px){
-    #login{
-        width:40%;
-    }
+#ForgotPass {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
 
+#ForgotPass a {
+    align-self: flex-end;
+    text-decoration: none;
 }
